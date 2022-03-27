@@ -1,0 +1,18 @@
+schemaVersion: 2.0.0
+fileExistenceTests:
+  - name: binary
+    path: /usr/local/bin/minit
+    shouldExist: true
+commandTests:
+  - name: usage
+    command: minit
+    exitCode: 2
+    expectedError:
+    - "no command provided"
+    - "usage: minit <command> \\[arguments\\]"
+    expectedOutput: [""]
+metadataTest:
+  cmd: [minit]
+  entrypoint: [minit]
+  # TODO create our own GH action with input for CST version
+  # user: "65534:65534"

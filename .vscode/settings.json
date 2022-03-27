@@ -1,0 +1,6 @@
+{
+  "workspace.isHidden": false,
+  "files.associations": {
+    "*.h": "c"
+  }
+}
